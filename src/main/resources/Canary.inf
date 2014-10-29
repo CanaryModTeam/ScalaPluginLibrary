@@ -1,0 +1,13 @@
+;# Plugin Language Library Settings
+#_REQUIRED_
+lang-name=java
+#_REQUIRED_
+lifecycle-class=net.canarymod.plugin.lifecycle.JavaPluginLifecycle
+#_OPTIONAL_
+lib-name=CanaryMod Scala Plugin Library
+
+# Plugin Test Side
+main-class=net.canarymod.plugin.lang.scala.ScalaPluginExample
+author=The CanaryMod Team
+version=1.0.0
+name=ScalaPluginExample
