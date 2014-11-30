@@ -181,6 +181,7 @@
                                 </includes>
                             </artifactSet>
                             <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <finalName>${project.name}-${project.version}${build.number}-independent</finalName>
                         </configuration>
                     </execution>
                 </executions>
@@ -250,14 +251,6 @@
                                 <link>http://docs.visualillusionsent.net/VIUtils/1.4.0/</link>
                                 <link>http://www.jdom.org/docs/apidocs/</link>
                             </links>
-                            <tags>
-                                <!-- Cause damagefilter uses @tags that don't exist... We need to make them exist -->
-                                <tag>
-                                    <name>PluginDev</name>
-                                    <placement>a</placement>
-                                    <head>PluginDev:</head>
-                                </tag>
-                            </tags>
                         </configuration>
                         <executions>
                             <execution>
@@ -271,6 +264,7 @@
                 </plugins>
             </build>
         </profile>
+
         <!-- Add Build number to a Jenkins build -->
         <profile>
             <id>jenkins</id>
